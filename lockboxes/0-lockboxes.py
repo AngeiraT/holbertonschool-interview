@@ -1,12 +1,14 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
-Module lockboxes
+Module canUnlockAll
 """
 
 
 def canUnlockAll(boxes):
     """
     Unlock the boxes
+        Parameters: list
+        Returns:Boolean
     """
     unlocked = [0]
     for box_id, box in enumerate(boxes):
