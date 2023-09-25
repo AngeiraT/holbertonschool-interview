@@ -1,15 +1,19 @@
 #!/usr/bin/python3
-""" makechange challenge """
+"""Makechange Challenge"""
 
 
 def makeChange(coins, total):
     """
-    mkechange challenge
-    """
+    Determine the fewest number of coins needed.
 
+    Args:
+        coins (list): coins in your possession
+        total (int): total to meet
+    Returns:
+        fewest number of coins needed
+    """
     if total <= 0:
         return 0
-
     coins.sort(reverse=True)
     sum = 0
     i = 0
